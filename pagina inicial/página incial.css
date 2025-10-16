@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    justify-content: space-between;
+}
+header > button{
+
+}
+h1{
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    border-radius: 16px;
+    padding: 5px;
+}
+.container_btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn_perfil{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: aqua;
+}
+
+#img_perfil{
+    width: 40px;
+    height: 40px;
+}
+
+#btn_direct{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+#img_direct{
+    width: 40px;
+    height: 40px;
+}
+
+.config{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#btn_config{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+#img_config{
+    width: 40px;
+    height: 40px;
+}
