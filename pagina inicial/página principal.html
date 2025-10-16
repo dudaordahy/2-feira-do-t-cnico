@@ -11,17 +11,24 @@
     <header>
             <h1>Porto Alegre</h1>
             <div class="container_btn">
-            <button id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
-            <button id="btn_perfil"><img id="img_perfil" src=""></button>
+            <button onclick="AbrirDirect()" id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
+            <button onclick="AbrirPerfil()" id="btn_perfil"><img id="img_perfil" src=""></button>
         </div>
     </header>
     <main>
-        <div id="mapa">
+        <div class="finalizacao">
+            <h1>Escolha a sua foto de perfil</h1>
+            <button onclick="escolherFoto()">Escolher foto</button>
+            <button onclick="voltarPagina()">Voltar</button>
+        </div>
+
+        <div class="mapa">
 
         </div>
         <div class="config">
-            <button id="btn_config"><img id="img_config" src="../imagens/configuracoes.png"></button>
+            <button onclick="AbrirConfig()" id="btn_config"><img id="img_config" src="../imagens/configuracoes.png"></button>
         </div>
     </main>
 </body>
+    <script src="página inicial.js"></script>
 </html>
