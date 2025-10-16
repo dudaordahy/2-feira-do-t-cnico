@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header{
     display: flex;
@@ -10,12 +11,9 @@ header{
     justify-content: space-between;
 }
 
-h1{
+#txt_cidade{
     font-size: 30px;
     display: inline-block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: aqua;
-    border-radius: 16px;
     padding: 5px;
 }
 .container_btn{
@@ -36,6 +34,7 @@ h1{
 #img_perfil{
     width: 40px;
     height: 40px;
+    border-radius: 20px;
 }
 
 #btn_direct{
@@ -72,4 +71,52 @@ h1{
 #img_config{
     width: 40px;
     height: 40px;
+}
+
+.container_escolhas{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: aqua;
+    width: 1000px;
+    height: 500px;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+#txt_escolha_perfil{
+    margin: 10px;
+    font-size: 50px;
+    width: 800px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50% -20%;
+    text-align: center;
+}
+
+#btn_foto{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+#btn_proximo{
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: brown;
 }

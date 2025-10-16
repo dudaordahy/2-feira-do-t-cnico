@@ -12,7 +12,7 @@ function AbrirConfig(){
 
 
 if(minutes >= 2) {
-    finalizacao.style.display = "block";
+    finalizacao.style.display = "none";
     formattedTime = "00:00:00"
     clearTimeout();
     window.addEventListener("keydown", (e) => {

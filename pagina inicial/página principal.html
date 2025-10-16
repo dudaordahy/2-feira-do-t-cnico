@@ -9,16 +9,17 @@
 </head>
 <body>
     <header>
-            <h1>Porto Alegre</h1>
+            <h1 id="txt_cidade">Porto Alegre</h1>
             <div class="container_btn">
             <button onclick="AbrirDirect()" id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
             <button onclick="AbrirPerfil()" id="btn_perfil"><img id="img_perfil" src=""></button>
         </div>
     </header>
     <main>
-        <div class="finalizacao">
-            <h1>Escolha a sua foto de perfil</h1>
-            <button onclick="escolherFoto()">Escolher foto</button>
+        <div class="container_escolhas">
+            <h1 id="txt_escolha_perfil">Escolha a sua foto de perfil</h1>
+            <button id="btn_foto" onclick="escolherFoto()">Escolher foto</button>
+            <button id="btn_proximo" onclick="proximaPagina()">Próximo</button>
         </div>
 
         <div class="mapa">
