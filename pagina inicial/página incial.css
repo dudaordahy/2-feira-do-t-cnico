@@ -147,10 +147,24 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100px;
+    width: 40px;
     height: 40px;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     border: none;
-    background-color: brown;
+    background-color: transparent;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+#img_proximo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+#btn_proximo, #img_proximo:hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
 }
