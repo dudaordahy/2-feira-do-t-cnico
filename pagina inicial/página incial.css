@@ -22,55 +22,56 @@ header{
 }
 
 #btn_perfil{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     background-color: aqua;
     cursor: pointer;
 }
 
 #img_perfil{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
 }
 
 #btn_direct{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
 #img_direct{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
-.config{
+.container_config{
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
 #btn_config{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
 #img_config{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 .container_escolhas{
@@ -96,7 +97,7 @@ header{
     text-align: center;
 }
 
-#btn_foto{
+#btn_foto_perfil{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,10 +113,11 @@ header{
     background-color: transparent;
 }
 
-#img_foto{
+#img_foto_perfil{
     width: 140px;
     height: 140px;
 }
+
 #txt_escolha_preferencias{
     font-size: 40px;
     width: 550px;
@@ -123,7 +125,7 @@ header{
     margin: 10px;
 }
 
-#container_botoes{
+#container_botoes_preferencias{
     margin: 30px 90px;
     width: 400px;
     height: auto;
@@ -132,7 +134,7 @@ header{
     flex-wrap: wrap;
 }
 
-.btns_escolhas{
+.btns_preferencias{
     width: 60px;
     height: 60px;
     border-radius: 30px;
