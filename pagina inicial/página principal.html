@@ -11,12 +11,12 @@
     <header>
             <h1 id="txt_cidade">Porto Alegre</h1>
             <div class="container_btn">
-            <button onclick="AbrirDirect()" id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
-            <button onclick="AbrirPerfil()" id="btn_perfil"><img id="img_perfil" src=""></button>
+            <button onclick="abrirDirect()" id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
+            <button onclick="abrirPerfil()" id="btn_perfil"><img id="img_perfil" src=""></button>
         </div>
     </header>
     <main>
-        <div class="container_escolhas">
+        <div class="container_escolhas" id="container_escolhas">
             <h1 id="txt_escolha_perfil">Escolha a sua foto de perfil</h1>
             <button id="btn_foto" onclick="escolherFoto()">Escolher foto</button>
             <button id="btn_proximo" onclick="proximaPagina()">Próximo</button>
@@ -26,9 +26,10 @@
 
         </div>
         <div class="config">
-            <button onclick="AbrirConfig()" id="btn_config"><img id="img_config" src="../imagens/configuracoes.png"></button>
+            <button onclick="abrirConfig()" id="btn_config"><img id="img_config" src="../imagens/configuracoes.png"></button>
         </div>
     </main>
 </body>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="página inicial.js"></script>
 </html>

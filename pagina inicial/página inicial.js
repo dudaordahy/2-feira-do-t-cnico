@@ -1,20 +1,27 @@
-function AbrirDirect(){
-    alert("Meu botão ta funcionando!");
+let container = document.getElementById('container_escolhas');
+let txt_container = document.getElementById('txt_escolha_perfil');
+
+window.sr = ScrollReveal({reset: true});
+sr.reveal(container, {duration: 2000});
+
+function abrirDirect(){
+  alert("Meu botão ta funcionando!");
 }
 
-function AbrirPerfil(){
+function abrirPerfil(){
 
 }
 
-function AbrirConfig(){
-    
+function abrirConfig(){
+  
 }
 
+function proximaPagina(){
 
-if(minutes >= 2) {
-    finalizacao.style.display = "none";
-    formattedTime = "00:00:00"
-    clearTimeout();
+}
+
+if (minutes >= 2) {
+    container.style.display = "none";
     window.addEventListener("keydown", (e) => {
         e.stopPropagation();
         e.stopImmediatePropagation();
