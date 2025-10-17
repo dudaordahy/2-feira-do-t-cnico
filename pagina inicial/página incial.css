@@ -102,20 +102,28 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
     position: absolute;
     top: 60%;
     left: 50%;
     translate: -50% -60%;
     border: none;
     background-color: transparent;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 #img_foto_perfil{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+#btn_foto_perfil, #img_foto_perfil:hover{
+    width: 160px;
+    height: 160px;
 }
 
 #txt_escolha_preferencias{
@@ -147,24 +155,24 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
     cursor: pointer;
     border: none;
     background-color: transparent;
-    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
 }
 
 #img_proximo{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
 }
 
 #btn_proximo, #img_proximo:hover{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
 }
