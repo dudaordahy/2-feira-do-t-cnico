@@ -2,10 +2,10 @@
 // colecao de preferencias do usuario
 const colecaoPreferencias =[{
   nome: "Gastro",
-  imagem: "prefGastronomia.jpg"
+  imagem: "prefGastro.png"
 },{
-  nome: "Volei",
-  imagem: "prefVolei.jpg"
+  nome: "Esporte",
+  imagem: "prefEsportes.png"
 }];
 
 //

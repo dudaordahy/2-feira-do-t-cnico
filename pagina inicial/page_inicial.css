@@ -7,12 +7,13 @@ header{
     display: flex;
     width: auto;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     justify-content: space-between;
 }
 
 #txt_cidade{
-    font-size: 30px;
+    font-size: 2rem;
+    text-align: center;
     display: inline-block;
     padding: 5px;
 }
@@ -22,6 +23,7 @@ header{
 }
 
 #btn_perfil{
+    align-items: center;
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -38,6 +40,7 @@ header{
 }
 
 #btn_direct{
+    align-items: center;
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -66,12 +69,17 @@ header{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
 #img_config{
     width: 30px;
     height: 30px;
     border-radius: 15px;
+}
+
+#btn_config:hover{
+    background-color: rgb(212, 212, 212);
 }
 
 .container_escolhas{
