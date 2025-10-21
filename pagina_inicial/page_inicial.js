@@ -1,4 +1,3 @@
-
 // colecao de preferencias do usuario
 const colecaoPreferencias =[{
   nome: "Gastro",
@@ -10,14 +9,12 @@ const colecaoPreferencias =[{
 
 //
 Object.values(colecaoPreferencias).forEach(value => {
-
   const imagem = document.createElement("img");
   imagem.src = "../imagens/"+value.imagem;
   console.log(imagem);
 });
 
 console.log(colecaoPreferencias);
-
 
 let container = document.getElementById('container_escolhas');
 let txt_container = document.getElementById('txt_escolha_perfil');
@@ -26,17 +23,9 @@ let btn_foto = document.getElementById('btn_foto_perfil');
 window.sr = ScrollReveal({reset: true});
 sr.reveal(container, {duration: 2500});
 
-function abrirDirect(){
-  alert("Meu botão ta funcionando!");
-}
+function escolherFoto(){
 
-function abrirPerfil(){
-
-}
-
-function abrirConfig(){
-  
-}
+};
 
 function proximaPagina(){
   txt_container.remove();

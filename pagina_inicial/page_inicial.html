@@ -6,18 +6,23 @@
     <title>Connect</title>
     <link rel="stylesheet" href="page_inicial.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="cabecalho">
-            <h1 id="txt_cidade">Porto Alegre</h1>
+            <h1 class="nunito-uniquifier" id="txt_cidade">Porto Alegre</h1>
         <div class="container_btn">
-            <button onclick="abrirDirect()" id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></button>
-            <button onclick="abrirPerfil()" id="btn_perfil"><img id="img_perfil" src=""></button>
+            <a id="btn_direct"><img id="img_direct" src="../imagens/bate-papo.png"></a>
+            <a id="btn_perfil"><img id="img_perfil" src=""></a>
         </div>
     </div>
         <div class="container_escolhas" id="container_escolhas">
-            <h1 id="txt_escolha_perfil">Escolha a sua foto de perfil</h1>
-            <button id="btn_foto_perfil" onclick="escolherFoto()"><img id="img_foto_perfil" src="../imagens/perfil.png"></button>
+            <h1 class="nunito-uniquifier" id="txt_escolha_perfil">Escolha a sua foto de perfil</h1>
+            <button id="btn_foto_perfil" onclick="escolherFoto()"><img id="img_foto_perfil" src="../imagens/user.png"></button>
             <button id="btn_proximo" onclick="proximaPagina()"><img id="img_proximo" src="../imagens/proximo.png"></button>
         </div>
         <div class="mapa">
