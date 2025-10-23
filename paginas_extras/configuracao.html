@@ -10,17 +10,42 @@
 <body>
   <div class="sidebar">
     <ul>
-      <li><a href="../pagina_inicial/page_inicial.html">⬅️ Voltar</a></li>
-      <li><a onclick="mostrarPersolanização()">🎨 Personalização</a></li>
-      <li><a onclick="mostrarSuporte()">🛠️ Suporte</a></li>
-      <li><a onclick="mostarConta()">👤 Conta</a></li>
-      <li><a onclick="desologarConta()">🚪 Sair</a></li>
+      <li><button onclick="voltarPagina()">⬅️ Voltar</button></li>
+      <li><button onclick="mostrarPersonalizacao()">🎨 Personalização</button></li>
+      <li><button onclick="mostrarSuporte()">🛠️ Suporte</button></li>
+      <li><button onclick="mostrarSuporte()">📄 Termos de Uso</button></li>
+      <li><button onclick="mostarConta()">👤 Conta</button></li>
+      <li><button onclick="desologarConta()">🚪 Sair</button></li>
     </ul>
   </div>
 
   <div class="conteudo">
-    <h1>Configurações</h1>
-    <p>Este é o conteúdo principal da página.</p>
+    <h1 id="titulo">Configurações</h1>
+    <p id="txt_principal">Bem-vindo à sua central de configurações!
+      Aqui você tem total controle sobre sua experiência no site — do visual às suas informações pessoais.
+      <br>
+      <br>
+      🌗 Personalização de Tema:
+      Escolha entre o modo claro, ideal para ambientes bem iluminados, ou o modo escuro, perfeito para uso noturno. O tema selecionado será salvo automaticamente, garantindo que o site continue do jeitinho que você gosta.
+      <br>
+      <br>
+      💬 Suporte e Ajuda:
+      Enfrentou algum problema ou tem dúvidas sobre o funcionamento do site? Nossa equipe de suporte está pronta para te ajudar com tutoriais, contato direto e perguntas frequentes (FAQ).
+      <br>
+      <br>
+      📜 Políticas e Privacidade:
+      Consulte nossas Políticas de Privacidade e Termos de Uso para entender como cuidamos dos seus dados, sua segurança e sua experiência dentro da plataforma.
+      <br>
+      <br>
+      👤 Gerenciar Conta:
+      Edite suas informações pessoais, atualize seu e-mail ou senha, e mantenha seu perfil sempre atualizado.
+      <br>
+      <br>
+      ❌ Excluir Conta:
+      Caso deseje encerrar sua jornada por aqui, você pode excluir sua conta permanentemente. Lembre-se: essa ação é irreversível e todos os seus dados serão removidos com segurança.
+      <br>
+      <br>
+    </p>
   </div>
 </body>
   <script src="configuracao.js"></script>

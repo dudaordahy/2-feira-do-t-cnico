@@ -16,11 +16,6 @@ body {
   padding-top: 30px;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -31,22 +26,32 @@ body {
   width: 100%;
 }
 
-.sidebar ul li a {
+.sidebar ul li button {
   display: block;
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
+  color: #fff;
+  background-color: #111;
+  border: none;
+  width: 100%;
+  padding: 20px 0;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li button:hover {
   background-color: #333;
 }
 
 /* --- CONTEÚDO PRINCIPAL --- */
 .conteudo {
   flex: 1;
-  padding: 40px;
+  padding: 30px;
   background-color: #f4f4f4;
+}
+
+#titulo{
+  font-size: 40px;
+}
+
+#txt_principal{
+  font-size: 20px;
 }

@@ -18,14 +18,40 @@ console.log(colecaoPreferencias);
 
 let container = document.getElementById('container_escolhas');
 let txt_container = document.getElementById('txt_escolha_perfil');
-let btn_foto = document.getElementById('btn_foto_perfil');
 
 window.sr = ScrollReveal({reset: true});
 sr.reveal(container, {duration: 2500});
 
-function escolherFoto(){
+const btnFoto = document.getElementById('btn_foto_perfil');
+let imgFoto = document.getElementById('img_foto_perfil');
 
-};
+window.addEventListener('load', () => {
+  const imgSalva = localStorage.getItem(imgFoto);
+  if(imgSalva){
+    imgSalva.src = imgSalva;
+  }
+})
+
+btnFoto.addEventListener('click', () => {
+  imgFoto.click(); // abre o seletor de arquivos
+});
+
+imgFoto.addEventListener('change', () => {
+  const arquivo = imgFoto.files[0];
+  if (arquivo) {
+    const leitor = new FileReader();
+
+    leitor.onload = function(e) {
+      const imagemBase64 = e.target.result;
+      imgFoto.src = imagemBase64;
+
+      // 💾 Salva a imagem no LocalStorage
+      localStorage.setItem(imgFoto, imagemBase64);
+    };
+
+    leitor.readAsDataURL(arquivo); // converte a imagem para Base64
+  }
+});
 
 function proximaPagina(){
   txt_container.remove();
