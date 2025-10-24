@@ -1,6 +1,5 @@
 <?php
 include_once './includes/conexao.php';
-include_once './includes/logado.php';
 include_once './includes/header.php';
 ?>
 <form action="./actions/login.php" method="post">
