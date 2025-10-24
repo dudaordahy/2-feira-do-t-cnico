@@ -6,7 +6,7 @@ $target_file = $target_dir . basename($_FILES["fotoPerfil"]["name"]);
 move_uploaded_file($_FILES["fotoPerfil"]["tmp_name"], $target_file);
 
 // capturar a distancia
-$distancia = $_POST[''];
+$distancia = $_POST['raioDistancia'];
 // dados do usuario
 
 // atualizar dados do usuario no banco
