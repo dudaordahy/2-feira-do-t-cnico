@@ -7,7 +7,7 @@ include_once './includes/header.php';
     <label for="usuario">Usuário</label><br>
     <input type="text" id="user" name="user"><br>
     <label for="senha">Senha</label><br>
-    <input type="text" id="senha" name="senha"><br><br>
+    <input type="password" id="senha" name="senha"><br><br>
     <button type="submit">Enviar</button>
 </form>
 <hr>
@@ -35,7 +35,6 @@ include_once './includes/header.php';
     <input type="text" id="complemento" name="complemento"><br>
     <label for="senha">Senha</label><br>
     <input type="password" id="senha" name="senha"><br><br>
-    <input type="file" name="" id=""><br><br>
     <button type="submit">Enviar</button>
 </form>
 

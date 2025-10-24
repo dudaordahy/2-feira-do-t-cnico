@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 23/10/2025 às 23:21
+-- Tempo de geração: 24/10/2025 às 20:02
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,6 +24,40 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `preferencias`
+--
+
+CREATE TABLE `preferencias` (
+  `PreferenciaID` int(11) NOT NULL,
+  `Nome` varchar(150) NOT NULL,
+  `Imagem` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `preferencias`
+--
+
+INSERT INTO `preferencias` (`PreferenciaID`, `Nome`, `Imagem`) VALUES
+(1, 'gastronomia', ''),
+(2, 'esportes', ''),
+(3, 'cultura', ''),
+(4, 'tecnologia', ''),
+(5, 'pets', ''),
+(6, 'plantas', ''),
+(7, 'trabalho', ''),
+(8, 'religião', ''),
+(9, 'jogos online', ''),
+(10, 'música', ''),
+(11, 'preferencia11', ''),
+(12, 'preferencia12', ''),
+(13, 'preferencia13', ''),
+(14, 'preferencia14', ''),
+(15, 'preferencia15', ''),
+(16, 'preferencia 16', '');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `usuarios`
 --
 
@@ -40,21 +74,28 @@ CREATE TABLE `usuarios` (
   `Complemento` varchar(100) NOT NULL,
   `Imagem` varchar(255) NOT NULL,
   `Cidade` varchar(150) NOT NULL,
-  `Estado` varchar(2) NOT NULL
+  `Estado` varchar(2) NOT NULL,
+  `Distancia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`UsuarioID`, `Nome`, `Sobrenome`, `Usuario`, `Email`, `Senha`, `CEP`, `Endereco`, `Numero`, `Complemento`, `Imagem`, `Cidade`, `Estado`) VALUES
-(1, 'nome', 'sobrenome', 'usuario', 'email@oi.com.br', '123456', 1234567890, 'rua legal', 123, 'bloco v', '', 'porto', 'rs'),
-(2, 'Eduarda ', 'Ordahy', 'dudaordahy', 'dudasciortino@gmail.com', 'dudinha2532', 90660280, 'Rua Humberto de Campos', 1196, 'nao', '', 'Porto Alegre', 'RS'),
-(3, 'Eduarda ', 'Ordahy', 'dudaordahy', 'dudasciortino@gmail.com', 'dudinha2532', 90660280, 'Rua Humberto de Campos', 1196, 'nao', '', 'Porto Alegre', 'RS');
+INSERT INTO `usuarios` (`UsuarioID`, `Nome`, `Sobrenome`, `Usuario`, `Email`, `Senha`, `CEP`, `Endereco`, `Numero`, `Complemento`, `Imagem`, `Cidade`, `Estado`, `Distancia`) VALUES
+(1, 'nome', 'sobrenome', 'usuario', 'email@oi.com.br', '123456', 1234567890, 'rua legal', 123, 'bloco v', '', 'porto', 'rs', 0),
+(2, 'Eduarda ', 'Ordahy', 'dudaordahy', 'dudasciortino@gmail.com', 'dudinha2532', 90660280, 'Rua Humberto de Campos', 1196, 'nao', '', 'Porto Alegre', 'RS', 0),
+(3, 'Eduarda ', 'Ordahy', 'dudaordahy', 'dudasciortino@gmail.com', 'dudinha2532', 90660280, 'Rua Humberto de Campos', 1196, 'nao', '', 'Porto Alegre', 'RS', 0);
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `preferencias`
+--
+ALTER TABLE `preferencias`
+  ADD PRIMARY KEY (`PreferenciaID`);
 
 --
 -- Índices de tabela `usuarios`
@@ -65,6 +106,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `preferencias`
+--
+ALTER TABLE `preferencias`
+  MODIFY `PreferenciaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
